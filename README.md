@@ -60,9 +60,9 @@ Procure por `mateusmarrero@outlook.com` em `index.html` (seção Contato e Rodap
 - Linktree: `https://linktr.ee/mateusmarrero`
 
 ### 4. Domínio (site oficial)
-O site usa `https://marrerotech.com.br/` como exemplo em `index.html`
-(`canonical`, Open Graph e JSON-LD), no `robots.txt` e no `sitemap.xml`.
-Troque pelo domínio real antes de publicar.
+O site está publicado em **`https://mateusmarrero.github.io/marrero-tech/`**, e essa URL
+aparece em `index.html` (`canonical`, Open Graph e JSON-LD), no `robots.txt` e no `sitemap.xml`.
+Se você usar um domínio próprio (ex.: `marrerotech.com.br`), troque a URL nesses 3 arquivos.
 
 ### 5. Imagem de compartilhamento (Open Graph)
 Crie uma imagem **1200×630 px** chamada `og-marrero-tech.png` e coloque em
@@ -108,11 +108,40 @@ npx serve .
 
 Depois acesse `http://localhost:8000`.
 
-## Publicando
+## Publicado em (GitHub Pages)
 
-Por ser estático, funciona em Netlify, Vercel, GitHub Pages, Cloudflare Pages,
-Hostinger, etc. Basta enviar o conteúdo da pasta `suporte-tecnico-remoto/`
-para a raiz pública do serviço.
+| | |
+|---|---|
+| **Site ao vivo** | https://mateusmarrero.github.io/marrero-tech/ |
+| **Repositório** | https://github.com/mateusmarrero/marrero-tech |
+| **Branch / pasta** | `main` / raiz (`/`) |
+| **Provedor** | GitHub Pages (grátis) |
+
+### Como publicar uma atualização
+Sempre que alterar algo neste site, envie para o GitHub:
+
+```bash
+cd "C:\SItes OC\suporte-tecnico-remoto"
+git add -A
+git commit -m "Descrição do que mudou"
+git push
+```
+
+O GitHub Pages reconstrói o site automaticamente em ~1 minuto.
+
+### Como usar um domínio próprio
+1. Compre o domínio (Registro.br, Namecheap…).
+2. No repositório, crie um arquivo `CNAME` na raiz contendo só o domínio
+   (ex.: `marrerotech.com.br`).
+3. No painel do seu registrador, crie os registros DNS que o GitHub indica
+   (Settings → Pages → Custom domain).
+4. Marque "Enforce HTTPS".
+5. Atualize a URL em `index.html`, `robots.txt` e `sitemap.xml`.
+
+## Outras opções de hospedagem
+
+Por ser estático, também funciona em Netlify, Vercel, Cloudflare Pages e Hostinger —
+basta enviar o conteúdo desta pasta para a raiz pública do serviço.
 
 ## Observações
 
