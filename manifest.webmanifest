@@ -1,0 +1,19 @@
+{
+    "name": "Marrero Tech — Suporte Técnico Remoto",
+    "short_name": "Marrero Tech",
+    "description": "Suporte técnico remoto em informática para pessoas e pequenas empresas. Formatação, vírus, redes, Microsoft 365 e segurança da informação.",
+    "lang": "pt-BR",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#070C16",
+    "theme_color": "#070C16",
+    "icons": [
+        {
+            "src": "assets/images/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}
